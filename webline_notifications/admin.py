@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import Notification
+from webline_notifications import Notification
 
 
 class NotificationAdmin(admin.ModelAdmin):
