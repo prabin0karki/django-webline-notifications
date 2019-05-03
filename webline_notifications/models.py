@@ -18,6 +18,7 @@ class Notification(models.Model):
         settings.AUTH_USER_MODEL,
         related_name="notifications",
         related_query_name="user",
+        on_delete=models.CASCADE,
     )
     icon = models.CharField(max_length=40)
     COLOR_WARNING = '#f39c12'
